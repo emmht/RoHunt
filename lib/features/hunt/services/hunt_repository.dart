@@ -35,7 +35,19 @@ class HuntRepository {
         return aOrder.compareTo(bOrder);
       });
 
-    final objectives = sortedObjectiveDocs.map((document) {
+    final uniqueObjectiveDocs =
+        <int, QueryDocumentSnapshot<Map<String, dynamic>>>{};
+    for (final document in sortedObjectiveDocs) {
+      final order = document.data()['order'] as int? ?? 0;
+      if (order < 1 || order > 5) continue;
+      uniqueObjectiveDocs[order] = document;
+    }
+
+    final objectiveDocs = huntDocument.id == 'iasi_tainele_vechi'
+        ? uniqueObjectiveDocs.entries.map((entry) => entry.value).toList()
+        : sortedObjectiveDocs;
+
+    final objectives = objectiveDocs.map((document) {
       final data = document.data();
       final order = data['order'] as int? ?? 0;
 
