@@ -1,0 +1,39 @@
+name: flutter_application_1
+description: RoHunt, o aplicatie de treasure hunt turistic in Romania.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cloud_firestore: ^6.1.3
+  firebase_auth: ^6.2.0
+  firebase_core: ^4.5.0
+  image: ^3.3.0
+  image_picker: ^1.2.1
+  shared_preferences: ^2.5.3
+  tflite_flutter: ^0.12.1
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/avatars/
+    - assets/ml/
+    - assets/official_images/iasi/
+    - assets/official_images/iasi/Catedrala_mitropolitana/
+    - assets/official_images/iasi/Palatul_culturii/
+    - assets/official_images/iasi/Parcul_copou/
+    - assets/official_images/iasi/Piata_unirii/
+    - assets/official_images/iasi/Teatrul_national/
