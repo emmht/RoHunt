@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 import '../../../core/routing/routes.dart';
 
@@ -43,7 +43,7 @@ class WelcomeScreen extends StatelessWidget {
                     vertical: 14,
                   ),
                 ),
-                child: const Text('Log in'),
+                child: const Text('Autentificare'),
               ),
               const SizedBox(height: 12),
               OutlinedButton(
@@ -54,7 +54,7 @@ class WelcomeScreen extends StatelessWidget {
                     vertical: 14,
                   ),
                 ),
-                child: const Text('Sign up'),
+                child: const Text('Înregistrare'),
               ),
             ],
           ),

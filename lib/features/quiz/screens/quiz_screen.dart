@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 import '../../../core/routing/routes.dart';
 import '../../cities/services/favorite_cities_service.dart';
@@ -505,7 +505,7 @@ class _ResultView extends StatelessWidget {
         OutlinedButton.icon(
           onPressed: onRestart,
           icon: const Icon(Icons.refresh),
-          label: const Text('Refa quiz-ul'),
+          label: const Text('Refă quiz-ul'),
         ),
       ],
     );

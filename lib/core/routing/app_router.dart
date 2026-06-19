@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'routes.dart';
 
 import '../../features/auth/screens/welcome_screen.dart';
@@ -60,7 +60,7 @@ class AppRouter {
       default:
         return MaterialPageRoute(
           builder: (_) =>
-              const Scaffold(body: Center(child: Text('Pagina indisponibila'))),
+              const Scaffold(body: Center(child: Text('Pagina indisponibilă'))),
         );
     }
   }

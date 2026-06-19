@@ -50,12 +50,20 @@ class HuntRepository {
     final objectives = objectiveDocs.map((document) {
       final data = document.data();
       final order = data['order'] as int? ?? 0;
+      final localObjective =
+          huntDocument.id == 'iasi_tainele_vechi' &&
+              order >= 1 &&
+              order <= iasiTreasureHunt.objectives.length
+          ? iasiTreasureHunt.objectives[order - 1]
+          : null;
 
       return HuntObjective(
-        name: data['name'] as String? ?? '',
-        story: data['story'] as String? ?? '',
-        hints: List<String>.from(data['hints'] as List? ?? const []),
-        reward: data['reward'] as String? ?? '',
+        name: localObjective?.name ?? data['name'] as String? ?? '',
+        story: localObjective?.story ?? data['story'] as String? ?? '',
+        hints:
+            localObjective?.hints ??
+            List<String>.from(data['hints'] as List? ?? const []),
+        reward: localObjective?.reward ?? data['reward'] as String? ?? '',
         photoInstruction: _photoInstructionFor(
           huntDocument.id,
           order,
@@ -68,15 +76,24 @@ class HuntRepository {
       );
     }).toList();
 
+    final localHunt = huntDocument.id == 'iasi_tainele_vechi'
+        ? iasiTreasureHunt
+        : null;
+
     return TreasureHunt(
       id: huntDocument.id,
       cityId: huntData['cityId'] as String? ?? cityId,
       cityName: _cityNameFromId(huntData['cityId'] as String? ?? cityId),
-      title: huntData['title'] as String? ?? '',
-      story: huntData['story'] as String? ?? '',
-      startPoint: huntData['startPoint'] as String? ?? '',
-      estimatedTime: huntData['estimatedTime'] as String? ?? '',
-      rewardName: huntData['rewardName'] as String? ?? '',
+      title: localHunt?.title ?? huntData['title'] as String? ?? '',
+      story: localHunt?.story ?? huntData['story'] as String? ?? '',
+      startPoint:
+          localHunt?.startPoint ?? huntData['startPoint'] as String? ?? '',
+      estimatedTime:
+          localHunt?.estimatedTime ??
+          huntData['estimatedTime'] as String? ??
+          '',
+      rewardName:
+          localHunt?.rewardName ?? huntData['rewardName'] as String? ?? '',
       objectives: objectives,
     );
   }

@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+﻿import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../../../core/routing/routes.dart';
 import '../services/auth_service.dart';
@@ -87,7 +87,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   String? _validateConfirmPassword(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Confirma parola';
+      return 'Confirmă parola';
     }
 
     if (value != _passwordController.text) {
@@ -155,7 +155,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Sign up'), centerTitle: true),
+      appBar: AppBar(title: const Text('Înregistrare'), centerTitle: true),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24),
@@ -216,7 +216,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     onPressed: _isLoading ? null : _register,
                     child: _isLoading
                         ? const CircularProgressIndicator()
-                        : const Text('Sign up'),
+                        : const Text('Înregistrare'),
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -224,7 +224,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, Routes.login);
                   },
-                  child: const Text('Ai deja cont? Log in'),
+                  child: const Text('Ai deja cont? Autentifică-te'),
                 ),
               ],
             ),

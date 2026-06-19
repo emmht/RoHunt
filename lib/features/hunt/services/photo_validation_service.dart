@@ -1,4 +1,4 @@
-import 'dart:io';
+﻿import 'dart:io';
 import 'dart:math' as math;
 
 import 'package:flutter/foundation.dart';
@@ -171,7 +171,7 @@ class PhotoValidationService {
     final decodedImage = img.decodeImage(imageBytes);
 
     if (decodedImage == null) {
-      throw const FormatException('Imaginea nu poate fi citita.');
+      throw const FormatException('Imaginea nu poate fi citită.');
     }
 
     final input = _imageToModelInput(decodedImage, inputTensor.type);

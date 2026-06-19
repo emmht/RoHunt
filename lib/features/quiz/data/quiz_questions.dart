@@ -1,4 +1,4 @@
-import '../models/quiz_question.dart';
+﻿import '../models/quiz_question.dart';
 import '../models/tour_city.dart';
 
 const quizQuestions = [
@@ -84,24 +84,24 @@ const quizQuestions = [
         weight: 2,
       ),
       QuizOption(
-        label: 'Caut o poveste interesanta despre loc',
+        label: 'Caut o poveste interesantă despre loc',
         tags: {CityTag.history, CityTag.culture},
         weight: 2,
       ),
       QuizOption(
-        label: 'Caut ceva bun de mancat',
+        label: 'Caut ceva bun de mâncat',
         tags: {CityTag.food, CityTag.urban},
         weight: 2,
       ),
       QuizOption(
-        label: 'Caut un parc, o panorama sau natura',
+        label: 'Caut un parc, o panoramă sau natură',
         tags: {CityTag.nature, CityTag.mountain},
         weight: 2,
       ),
     ],
   ),
   QuizQuestion(
-    question: 'Cum iti imaginezi seara perfecta intr-o excursie?',
+    question: 'Cum îți imaginezi seara perfectă într-o excursie?',
     options: [
       QuizOption(
         label: 'Apus pe malul apei',
@@ -110,12 +110,12 @@ const quizQuestions = [
         weight: 3,
       ),
       QuizOption(
-        label: 'O cina buna intr-un centru animat',
+        label: 'O cină bună într-un centru animat',
         tags: {CityTag.food, CityTag.urban, CityTag.nightlife},
         weight: 2,
       ),
       QuizOption(
-        label: 'O plimbare linistita prin strazi istorice',
+        label: 'O plimbare liniștită prin străzi istorice',
         tags: {CityTag.history, CityTag.romantic, CityTag.quiet},
         weight: 2,
       ),
@@ -127,40 +127,40 @@ const quizQuestions = [
     ],
   ),
   QuizQuestion(
-    question: 'Ce fel de povesti te prind cel mai repede?',
+    question: 'Ce fel de povești te prind cel mai repede?',
     options: [
       QuizOption(
-        label: 'Regi, palate si personaje istorice',
+        label: 'Regi, palate și personaje istorice',
         tags: {CityTag.history, CityTag.museums},
         weight: 2,
       ),
       QuizOption(
-        label: 'Legende medievale si mistere',
+        label: 'Legende medievale și mistere',
         tags: {CityTag.medieval, CityTag.history},
         weight: 2,
       ),
       QuizOption(
-        label: 'Traditii locale si oameni autentici',
+        label: 'Tradiții locale și oameni autentici',
         tags: {CityTag.traditions, CityTag.culture},
         weight: 2,
       ),
       QuizOption(
-        label: 'Povesti despre natura si locuri spectaculoase',
+        label: 'Povești despre natură și locuri spectaculoase',
         tags: {CityTag.nature, CityTag.mountain},
         weight: 2,
       ),
     ],
   ),
   QuizQuestion(
-    question: 'Ce te face sa te opresti din mers ca sa te uiti mai atent?',
+    question: 'Ce te face să te oprești din mers ca să te uiți mai atent?',
     options: [
       QuizOption(
-        label: 'O cladire foarte frumoasa',
+        label: 'O clădire foarte frumoasă',
         tags: {CityTag.architecture, CityTag.photography},
         weight: 2,
       ),
       QuizOption(
-        label: 'Un muzeu sau o expozitie',
+        label: 'Un muzeu sau o expoziție',
         tags: {CityTag.museums, CityTag.culture},
         weight: 2,
       ),
@@ -170,7 +170,7 @@ const quizQuestions = [
         weight: 2,
       ),
       QuizOption(
-        label: 'Valuri, lacuri sau Dunare',
+        label: 'Valuri, lacuri sau Dunăre',
         requiredTags: {CityTag.seaside},
         tags: {CityTag.water, CityTag.relaxing},
         weight: 3,
@@ -178,10 +178,10 @@ const quizQuestions = [
     ],
   ),
   QuizQuestion(
-    question: 'Cu cine te vezi facand aventura?',
+    question: 'Cu cine te vezi făcând aventura?',
     options: [
       QuizOption(
-        label: 'Singura, vreau ceva de explorat in ritmul meu',
+        label: 'Singură, vreau ceva de explorat în ritmul meu',
         tags: {CityTag.quiet, CityTag.culture},
         weight: 1,
       ),
@@ -196,32 +196,32 @@ const quizQuestions = [
         weight: 2,
       ),
       QuizOption(
-        label: 'Cu cineva drag, vreau atmosfera romantica',
+        label: 'Cu cineva drag, vreau atmosferă romantică',
         tags: {CityTag.romantic, CityTag.photography},
         weight: 2,
       ),
     ],
   ),
   QuizQuestion(
-    question: 'Ce preferi sa ai mai aproape de traseu?',
+    question: 'Ce preferi să ai mai aproape de traseu?',
     options: [
       QuizOption(
-        label: 'Muzee si obiective culturale',
+        label: 'Muzee și obiective culturale',
         tags: {CityTag.museums, CityTag.culture, CityTag.history},
         weight: 2,
       ),
       QuizOption(
-        label: 'Terase, restaurante si cafenele',
+        label: 'Terase, restaurante și cafenele',
         tags: {CityTag.food, CityTag.urban},
         weight: 2,
       ),
       QuizOption(
-        label: 'Natura, parcuri sau trasee',
+        label: 'Natură, parcuri sau trasee',
         tags: {CityTag.nature, CityTag.mountain},
         weight: 2,
       ),
       QuizOption(
-        label: 'Plaja, port sau faleza',
+        label: 'Plajă, port sau faleză',
         requiredTags: {CityTag.seaside},
         tags: {CityTag.water},
         weight: 3,
@@ -229,7 +229,7 @@ const quizQuestions = [
     ],
   ),
   QuizQuestion(
-    question: 'Ce ritm ti se potriveste?',
+    question: 'Ce ritm ți se potrivește?',
     options: [
       QuizOption(
         label: 'Lent, cu pauze multe',
@@ -237,12 +237,12 @@ const quizQuestions = [
         weight: 2,
       ),
       QuizOption(
-        label: 'Echilibrat, cate putin din toate',
+        label: 'Echilibrat, câte puțin din toate',
         tags: {CityTag.culture, CityTag.urban, CityTag.history},
         weight: 1,
       ),
       QuizOption(
-        label: 'Activ, vreau sa simt ca am explorat',
+        label: 'Activ, vreau să simt că am explorat',
         tags: {CityTag.active, CityTag.mountain, CityTag.nature},
         weight: 2,
       ),
@@ -257,18 +257,18 @@ const quizQuestions = [
         weight: 2,
       ),
       QuizOption(
-        label: 'O strada colorata sau o piata frumoasa',
+        label: 'O stradă colorată sau o piață frumoasă',
         tags: {CityTag.architecture, CityTag.urban, CityTag.photography},
         weight: 2,
       ),
       QuizOption(
-        label: 'Un varf, o padure sau o panorama',
+        label: 'Un vârf, o pădure sau o panoramă',
         requiredTags: {CityTag.mountain},
         tags: {CityTag.nature, CityTag.photography},
         weight: 3,
       ),
       QuizOption(
-        label: 'Marea sau apa in fundal',
+        label: 'Marea sau apa în fundal',
         requiredTags: {CityTag.seaside},
         tags: {CityTag.water, CityTag.photography},
         weight: 3,
@@ -276,25 +276,25 @@ const quizQuestions = [
     ],
   ),
   QuizQuestion(
-    question: 'Ce te-ar face sa recomanzi orașul altcuiva?',
+    question: 'Ce te-ar face să recomanzi orașul altcuiva?',
     options: [
       QuizOption(
-        label: 'Are atmosfera aparte',
+        label: 'Are atmosferă aparte',
         tags: {CityTag.romantic, CityTag.culture},
         weight: 2,
       ),
       QuizOption(
-        label: 'Are multe lucruri de facut',
+        label: 'Are multe lucruri de făcut',
         tags: {CityTag.urban, CityTag.nightlife, CityTag.festivals},
         weight: 2,
       ),
       QuizOption(
-        label: 'Are povesti si traditii',
+        label: 'Are povești și tradiții',
         tags: {CityTag.traditions, CityTag.history, CityTag.spiritual},
         weight: 2,
       ),
       QuizOption(
-        label: 'Are peisaje care raman in minte',
+        label: 'Are peisaje care rămân în minte',
         tags: {CityTag.nature, CityTag.mountain, CityTag.water},
         weight: 2,
       ),
@@ -325,7 +325,7 @@ const quizQuestions = [
     ],
   ),
   QuizQuestion(
-    question: 'Ce cuvant descrie cel mai bine excursia ta ideala?',
+    question: 'Ce cuvânt descrie cel mai bine excursia ta ideală?',
     options: [
       QuizOption(
         label: 'Relaxare',
@@ -333,7 +333,7 @@ const quizQuestions = [
         weight: 2,
       ),
       QuizOption(
-        label: 'Aventura',
+        label: 'Aventură',
         tags: {CityTag.active, CityTag.mountain, CityTag.nature},
         weight: 2,
       ),
@@ -350,25 +350,25 @@ const quizQuestions = [
     ],
   ),
   QuizQuestion(
-    question: 'La final, ce ai vrea sa simti?',
+    question: 'La final, ce ai vrea să simți?',
     options: [
       QuizOption(
-        label: 'Ca am invatat ceva nou',
+        label: 'Că am învățat ceva nou',
         tags: {CityTag.history, CityTag.museums, CityTag.culture},
         weight: 2,
       ),
       QuizOption(
-        label: 'Ca m-am deconectat complet',
+        label: 'Că m-am deconectat complet',
         tags: {CityTag.relaxing, CityTag.nature, CityTag.water},
         weight: 2,
       ),
       QuizOption(
-        label: 'Ca am vazut ceva spectaculos',
+        label: 'Că am văzut ceva spectaculos',
         tags: {CityTag.photography, CityTag.mountain, CityTag.architecture},
         weight: 2,
       ),
       QuizOption(
-        label: 'Ca am trait un oraș viu',
+        label: 'Că am trăit un oraș viu',
         tags: {CityTag.urban, CityTag.food, CityTag.nightlife},
         weight: 2,
       ),

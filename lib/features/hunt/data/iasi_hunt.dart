@@ -1,4 +1,4 @@
-import '../models/treasure_hunt.dart';
+﻿import '../models/treasure_hunt.dart';
 
 const iasiTreasureHunt = TreasureHunt(
   id: 'iasi_tainele_vechi',
@@ -28,7 +28,7 @@ const iasiTreasureHunt = TreasureHunt(
       officialImageAsset: 'assets/official_images/iasi/Parcul_copou/',
     ),
     HuntObjective(
-      name: 'Piata Unirii',
+      name: 'Piața Unirii',
       story:
           'După zona verde de la început, traseul coboară spre un spațiu mai deschis și mai agitat, unde orașul își arată energia centrală. Este un loc de întâlnire, de trecere și de evenimente, legat de memoria istorică și de momentele în care oamenii se adună împreună. Aici se simte trecerea de la liniștea parcului la pulsul urban al Iașului.',
       hints: [
@@ -44,7 +44,7 @@ const iasiTreasureHunt = TreasureHunt(
       officialImageAsset: 'assets/official_images/iasi/Piata_unirii/',
     ),
     HuntObjective(
-      name: 'Teatrul National Vasile Alecsandri',
+      name: 'Teatrul Național Vasile Alecsandri',
       story:
           'Următoarea oprire te apropie de o clădire elegantă, legată de artă, emoție și povești spuse în fața publicului. După locurile deschise și aglomerate, traseul capătă aici o notă mai artistică. Este un punct în care orașul nu mai este doar privit, ci imaginat prin cortine, lumini, voci și momente care prind viață pe scenă.',
       hints: [
@@ -60,7 +60,7 @@ const iasiTreasureHunt = TreasureHunt(
       officialImageAsset: 'assets/official_images/iasi/Teatrul_national/',
     ),
     HuntObjective(
-      name: 'Catedrala Mitropolitana',
+      name: 'Catedrala Mitropolitană',
       story:
           'De aici, traseul ajunge într-un loc în care atmosfera se schimbă din nou. Zgomotul orașului pare să se reducă, iar spațiul devine mai solemn și mai așezat. Următorul punct are o prezență impunătoare și este legat de liniște, tradiție și spiritualitate. Fotografia trebuie să surprindă cât mai clar clădirea și verticalitatea ei.',
       hints: [
@@ -85,7 +85,7 @@ const iasiTreasureHunt = TreasureHunt(
         'Este unul dintre cele mai fotografiate obiective turistice din Iași.',
         'Locația este Palatul Culturii.',
       ],
-      reward: 'Coroana culturala',
+      reward: 'Coroana culturală',
       photoInstruction:
           'Fă poza din fața locației, de la distanță, astfel încât reperul principal să fie vizibil cât mai complet.',
       latitude: 47.1577,

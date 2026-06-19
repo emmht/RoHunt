@@ -1,4 +1,4 @@
-import 'dart:io';
+﻿import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -507,7 +507,7 @@ class _HuntStepViewState extends State<_HuntStepView> {
         const SizedBox(height: 18),
         _InfoRow(
           icon: Icons.workspace_premium_outlined,
-          title: 'Recompensa dupa validare',
+          title: 'Recompensa după validare',
           value: widget.objective.reward,
         ),
       ],
@@ -725,7 +725,7 @@ class _PhotoValidationCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'Validare locatie',
+            'Validare locație',
             style: Theme.of(
               context,
             ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),

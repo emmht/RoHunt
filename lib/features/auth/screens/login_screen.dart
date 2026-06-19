@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+﻿import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../../../core/routing/routes.dart';
 import '../services/auth_service.dart';
@@ -161,7 +161,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Log in'), centerTitle: true),
+      appBar: AppBar(title: const Text('Autentificare'), centerTitle: true),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24),
@@ -202,7 +202,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed: _isLoading ? null : _login,
                     child: _isLoading
                         ? const CircularProgressIndicator()
-                        : const Text('Log in'),
+                        : const Text('Autentificare'),
                   ),
                 ),
                 Align(
@@ -217,7 +217,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, Routes.register);
                   },
-                  child: const Text('Nu ai cont? Sign up'),
+                  child: const Text('Nu ai cont? Creează unul'),
                 ),
               ],
             ),

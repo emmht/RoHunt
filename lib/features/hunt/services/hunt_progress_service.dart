@@ -1,4 +1,4 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+﻿import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../models/treasure_hunt.dart';
@@ -202,7 +202,7 @@ class HuntProgressService {
             return EarnedMedal(
               huntId: data['huntId'] as String? ?? document.id,
               cityId: data['cityId'] as String? ?? '',
-              cityName: data['cityName'] as String? ?? 'Oras',
+              cityName: data['cityName'] as String? ?? 'Oraș',
               huntTitle: data['huntTitle'] as String? ?? 'Treasure hunt',
               finalScore: data['finalScore'] as int? ?? 0,
             );
